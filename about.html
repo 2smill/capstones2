@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bugallon Dashboard</title>
+    <link rel="icon" href="Capstone.png" type="image/png" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="aboutUs-content.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img
+              src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t1.15752-9/383808016_686358216456289_2202587373148100267_n.png?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGaemR7o-mCuPv1661ipvQQEO19i6Kx4RgQ7X2LorHhGHkYWnj81ysBXuKBEofeF0SCN04CR2In1aexMA_L3efl&_nc_ohc=mGW894o9VUkAX_l6FV6&_nc_ht=scontent.fcrk1-4.fna&oh=03_AdQ6m65kffbgJrhkETTQmA2Vn-V94vKveSKVeFKOk2zJDQ&oe=659F02F9"
+              alt=""
+            />
+          </span>
+          <div class="text logo-text">
+            <span class="name">Bugallon</span>
+          </div>
+        </div>
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+      <div class="menu-bar">
+        <div class="menu">
+          <ul class="menu-links">
+            <li>
+              <a href="home.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                <i class="bx bx-user icon"></i>
+                <span class="text nav-text">About us</span>
+              </a>
+            </li>
+            <li>
+              <a href="Job.php">
+                <i class="bx bx-briefcase icon"></i>
+                <span class="text nav-text">Jobs</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom-content">
+          <li>
+            <a href="index.html">
+              <i class="bx bx-log-out icon"></i>
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section class="home" id="homemain">
+      <div class="container-fluid sectionheader">
+        <div class="container">
+          <header class="dual-logo-header">
+            <div class="logo">
+              <a href="https://www.facebook.com/onebugallon"></a>
+              <img
+                src="https://scontent.fcrk1-4.fna.fbcdn.net/v/t1.15752-9/383808016_686358216456289_2202587373148100267_n.png?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGaemR7o-mCuPv1661ipvQQEO19i6Kx4RgQ7X2LorHhGHkYWnj81ysBXuKBEofeF0SCN04CR2In1aexMA_L3efl&_nc_ohc=mGW894o9VUkAX_l6FV6&_nc_ht=scontent.fcrk1-4.fna&oh=03_AdQ6m65kffbgJrhkETTQmA2Vn-V94vKveSKVeFKOk2zJDQ&oe=659F02F9"
+                alt="Logo 1"
+              />
+            </div>
+            <div class="header-content">
+              <h1 class="--h1-custom">Municipal Bulletin Board</h1>
+              <h3 class="--h3-custom">
+                Connecting Opportunities for Hiring and Growth
+              </h3>
+              <!-- <p>
+                The Municipality of Bugallon was formerly called "Salasa"
+                (meaning floor joist in the dialect, a part of a wooden house
+                where the floor is attached to). In the Spanish colonial era,
+                the Spanish authorities established the town center in Poblacion
+                (now Barangay Salasa).
+              </p> -->
+              <p>- Where things comes to life -</p>
+            </div>
+            <div class="logo">
+              <a href="https://www.facebook.com/onebugallon"></a>
+              <img
+                src="https://new.pangasinan.gov.ph/wp-content/uploads/2023/06/bugallon-seal.png"
+                alt="Logo 2"
+              />
+            </div>
+          </header>
+        </div>
+      </div>
+
+      <div class="container-fluid m-top100">
+        <div class="container m-auto">
+          <div class="infoButton-section">
+            <h1 class="aboutUs-titles text-center p-2">About Us</h1>
+            <div class="button-container">
+              <button
+                id="btnHome"
+                class="btn-aboutUs"
+                onclick="changeContent('Introduction')"
+              >
+                Introduction
+              </button>
+              <button
+                id="btnAboutUs"
+                class="btn-aboutUs"
+                onclick="changeContent('Future Goals')"
+              >
+                Future Goals
+              </button>
+              <button
+                id="btnTeamMembers"
+                class="btn-aboutUs"
+                onclick="changeContent('Team Members')"
+              >
+                Team Members
+              </button>
+            </div>
+          </div>
+          <div id="aboutUscontent" class="container text-center p-3 mb-5">
+            <div class="container">
+              <div class="contentText" role="alert">
+                <h1 class="aboutUs-titles">
+                  <b>Welcome to Bugallon Municipal Bulletin Board</b>
+                </h1>
+                <p>
+                  At Bugallon Municipal Bulletin Board, we strive to be the
+                  bridge between talented individuals and companies seeking
+                  skilled professionals. Our platform is designed to foster
+                  connections, simplify the hiring process, and empower
+                  businesses to find the right talent.
+                </p>
+                <p>
+                  Whether you are a job seeker exploring new opportunities or a
+                  company looking to expand your team, Bugallon Municipal
+                  Bulletin Board is here to make the journey seamless. Join us
+                  in creating a vibrant community where careers flourish and
+                  businesses thrive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="foot pt-2 mt-5">
+        <p>&copy; 2023 Municipal Bulletin Board</p>
+      </footer>
+    </section>
+
+    <!-- TSAKA MAGPRETTIER KA DI MO NAKIKITA KULANG KA NG TAGS. ITONG CLOSING TAG NG SECTION WALA KANINA -->
+
+    <!-- NOTE undo comment if it leads to further conflicts (ie: unoperation navbar, etc) -->
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="aboutusScripts.js"></script>
+    <script>
+      const body = document.querySelector("body");
+      const sidebar = body.querySelector(".sidebar");
+      const toggle = body.querySelector(".toggle");
+
+      toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+
+      searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+      });
+    </script>
+  </body>
+</html>
